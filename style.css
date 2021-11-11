@@ -49,5 +49,51 @@ body {
 }
 
 .new-todo {
-  background-color: yellow;
+  background-color: hsl(235, 24%, 19%);
+  height: 70px;
+  margin-top: 50px;
+  border-radius: 6px;
+  display: flex;
+}
+
+.check {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid hsl(237, 14%, 26%);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.check-mark:hover {
+  background: linear-gradient(135deg, #55ddff 0%, #c058f3 100%);
+}
+
+.new-todo-input {
+  flex-grow: 1; /*grow the width as much as possible*/
+  display: flex;
+  align-items: center;
+}
+.new-todo-input form {
+  flex-grow: 1;
+}
+
+.new-todo-input input {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: hsl(234, 39%, 85%);
+}
+
+.new-todo-input input::placeholder {
+  color: hsl(233, 14%, 35%);
 }
